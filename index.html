@@ -761,6 +761,53 @@ footer{
         </div>
       </a>
 
+      <a class="project-card" href="https://github.com/OrDex78/phonecanvas" target="_blank">
+        <div>
+          <div style="width:100%;height:220px;border-radius:10px;margin-bottom:24px;overflow:hidden;position:relative;border:1px solid var(--border);">
+            <video autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;display:block;">
+              <source src="https://raw.githubusercontent.com/OrDex78/phonecanvas/main/lv_0_20260416233920.mp4" type="video/mp4">
+            </video>
+            <div style="position:absolute;bottom:0;left:0;right:0;padding:10px 14px;background:linear-gradient(to top,rgba(7,9,11,.9),transparent);display:flex;align-items:center;gap:8px;">
+              <span style="font-family:var(--mono);font-size:10px;letter-spacing:1.5px;color:#5eafff;text-transform:uppercase;">ESP32 → BLE → Android · Live device</span>
+            </div>
+          </div>
+          <div class="proj-badge" style="background:rgba(94,175,255,.15);border:1px solid rgba(94,175,255,.3);color:#5eafff;">Open Source</div>
+          <div class="proj-name">PhoneCanvas</div>
+          <p class="proj-desc">
+            Turn any Android phone into a wireless 128×128 display for ESP32 over BLE. The phone app is a dumb renderer — it never needs updating. Only the ESP32 code changes to control what's displayed. Custom bitmap protocol sends raw 4-bit packed frames for smooth animation.
+            <div style="margin-top:20px;padding:14px 16px;background:rgba(0,0,0,.4);border:1px solid rgba(94,175,255,.1);border-radius:6px;font-family:var(--mono);font-size:11px;line-height:2;letter-spacing:.3px;">
+              <span style="color:var(--muted)">// bitmap frame protocol</span><br>
+              <span style="color:var(--dim)">donut math</span> <span style="color:var(--muted)">→</span> <span style="color:#5eafff">fb[64][64]</span><span style="color:var(--muted)">(z-buffer)</span> <span style="color:var(--muted)">→</span> <span style="color:#5eafff">4-bit pack</span><span style="color:var(--muted)">(2048 bytes)</span><br>
+              <span style="color:var(--dim)">BLE notify</span> <span style="color:var(--muted)">→</span> <span style="color:var(--green)">Flutter decode</span> <span style="color:var(--muted)">→</span> <span style="color:var(--green)">Canvas render</span> <span style="color:var(--muted)">→</span> <span style="color:#5eafff">smooth animation</span>
+            </div>
+          </p>
+          <p style="font-size:12px;color:#5eafff;font-family:var(--mono);margin-bottom:16px;display:flex;align-items:center;gap:6px;">
+            <span>✓</span> Phone never needs updating. ESP32 controls everything.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">C++</span>
+            <span class="proj-tag">Flutter</span>
+            <span class="proj-tag">ESP32</span>
+            <span class="proj-tag">NimBLE</span>
+            <span class="proj-tag">BLE</span>
+            <span class="proj-tag">Dart</span>
+            <span class="proj-tag">3D Math</span>
+          </div>
+          <div style="display:flex;gap:12px;margin-top:8px;align-items:center;">
+            <a href="https://github.com/OrDex78/phonecanvas" target="_blank" rel="noopener"
+               style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:var(--green);color:#000;font-weight:700;font-size:13px;border-radius:6px;text-decoration:none;transition:all .15s;"
+               onmouseover="this.style.background='#b8ff8a'" onmouseout="this.style.background='var(--green)'">
+              GitHub ↗
+            </a>
+            <a href="https://x.com/gauravshar64966" target="_blank" rel="noopener"
+               style="display:inline-flex;align-items:center;gap:6px;padding:10px 20px;background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--text);font-weight:600;font-size:13px;border-radius:6px;text-decoration:none;transition:all .15s;"
+               onmouseover="this.style.borderColor='rgba(255,255,255,.2)'" onmouseout="this.style.borderColor='var(--border)'">
+              Follow on X ↗
+            </a>
+          </div>
+        </div>
+      </a>
+
       <div style="border:1px dashed rgba(255,255,255,.08);border-radius:4px;padding:32px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
         <div>
           <div style="font-size:14px;font-weight:700;color:var(--white);margin-bottom:6px;">More projects coming</div>
@@ -984,6 +1031,16 @@ footer{
             <div class="clink-handle">Live project</div>
           </div>
           <div class="clink-arrow">→</div>
+        </a>
+        <a href="https://github.com/OrDex78/phonecanvas" target="_blank" class="clink">
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div style="width:36px;height:36px;border-radius:8px;background:rgba(94,175,255,.1);display:flex;align-items:center;justify-content:center;font-size:16px;">📱</div>
+            <div>
+              <div style="font-size:14px;font-weight:700;color:var(--white);">PhoneCanvas</div>
+              <div style="font-size:12px;color:var(--dim);">Open source</div>
+            </div>
+          </div>
+          <span>→</span>
         </a>
         <a class="clink" href="https://heygaurav.dev" target="_blank">
           <div class="clink-icon" style="background:rgba(94,175,255,.08)">🌐</div>
